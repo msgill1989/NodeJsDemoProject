@@ -11,6 +11,10 @@ const handlers=require('./lib/handlers');
 const helpers=require('./lib/helpers');
 
 
+helpers.sendTwilioSms('4158375309','Hello',(err)=>{
+    console.log('This was the error',err);
+});
+
 //Instantiate HTTP server
 const httpServer=http.createServer((req, res)=>{
     unifiedServer(req,res);
