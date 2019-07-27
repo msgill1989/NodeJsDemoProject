@@ -6,7 +6,6 @@
 //container object for client side application
 const app={};
 
-
 //config
 app.config={
     'sessionToken':false
